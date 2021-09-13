@@ -1,0 +1,21 @@
+{
+	"editor.detectIndentation": true,
+	"editor.formatOnSave": false,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"eslint.validate": [
+		"html",
+		"javascript",
+		"typescript"
+	],
+	"cSpell.ignoreWords": [
+		"typeorm"
+	],
+	"git.enabled": true,
+	"git.autofetch": "all",
+	"git.autorefresh": true,
+	"git.ignoreLimitWarning": false
+}

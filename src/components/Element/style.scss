@@ -1,0 +1,14 @@
+$namespace: '.element';
+$children: #{$namespace}__;
+$modifiers: #{$namespace}--;
+
+#{$namespace} {
+	position: relative;
+	word-break: break-word;
+}
+
+#{$modifiers} {
+	&invisible {
+		visibility: hidden;
+	}
+}

@@ -1,0 +1,59 @@
+$black-color: rgb(0, 0, 0);
+$white-color: rgb(255, 255, 255);
+
+// TO LIGHTEN
+@function lighten($color, $percentage) {
+	@return mix($white-color, $color, $percentage);
+}
+
+// TO DARKEN
+@function darken($color, $percentage) {
+	@return mix($black-color, $color, $percentage);
+}
+
+$primary-color: rgb(90, 80, 110);
+$primary-color--contrast: $white-color;
+$primary-color--lightest: lighten($primary-color, 75%);
+$primary-color--lighter: lighten($primary-color, 50%);
+$primary-color--light: lighten($primary-color, 25%);
+$primary-color--dark: darken($primary-color, 25%);
+$primary-color--darker: darken($primary-color, 50%);
+$primary-color--darkest: darken($primary-color, 75%);
+
+$secondary-color: rgb(200, 170, 160);
+$secondary-color--contrast: $white-color;
+$secondary-color--lightest: lighten($secondary-color, 75%);
+$secondary-color--lighter: lighten($secondary-color, 50%);
+$secondary-color--light: lighten($secondary-color, 25%);
+$secondary-color--dark: darken($secondary-color, 25%);
+$secondary-color--darker: darken($secondary-color, 50%);
+$secondary-color--darkest: darken($secondary-color, 75%);
+
+$tertiary-color: rgb(20, 40, 60);
+$tertiary-color--contrast: $white-color;
+$tertiary-color--lightest: lighten($tertiary-color, 75%);
+$tertiary-color--lighter: lighten($tertiary-color, 50%);
+$tertiary-color--light: lighten($tertiary-color, 25%);
+$tertiary-color--dark: darken($tertiary-color, 25%);
+$tertiary-color--darker: darken($tertiary-color, 50%);
+$tertiary-color--darkest: darken($tertiary-color, 75%);
+
+$smog-color: rgb(240, 195, 140);
+$smog-color--contrast: $white-color;
+$smog-color--lightest: lighten($smog-color, 75%);
+$smog-color--lighter: lighten($smog-color, 50%);
+$smog-color--light: lighten($smog-color, 25%);
+$smog-color--dark: darken($smog-color, 25%);
+$smog-color--darker: darken($smog-color, 50%);
+$smog-color--darkest: darken($smog-color, 75%);
+
+$smoke-color: rgb(70, 40, 20);
+$smoke-color--contrast: $white-color;
+$smoke-color--lightest: lighten($smoke-color, 75%);
+$smoke-color--lighter: lighten($smoke-color, 50%);
+$smoke-color--light: lighten($smoke-color, 25%);
+$smoke-color--dark: darken($smoke-color, 25%);
+$smoke-color--darker: darken($smoke-color, 50%);
+$smoke-color--darkest: darken($smoke-color, 75%);
+
+$scrollbar-thickness: 0.6rem;

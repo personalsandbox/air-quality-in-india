@@ -1,0 +1,43 @@
+$namespace: '.switch';
+$children: #{$namespace}__;
+$modifiers: #{$namespace}--;
+
+#{$namespace} {
+	position: relative;
+	border-radius: 3.2rem;
+	border: 0.2rem solid #000;
+	cursor: pointer;
+	height: 2.4rem;
+	width: 4rem;
+	padding: 0.4rem;
+	// CHILDREN
+	#{$children} {
+		&control {
+			position: relative;
+			display: flex;
+			flex: 1;
+			width: 100%;
+		}
+		&thumb {
+			border-radius: 100%;
+			background-color: #000;
+			height: 1.2rem;
+			width: 1.2rem;
+			margin: 0;
+			transition: ease-in-out 0.3s all;
+		}
+	}
+}
+
+#{$modifiers} {
+	&checked {
+		#{$children} {
+			&thumb {
+				margin-left: 1.6rem;
+			}
+		}
+	}
+	&disabled {
+		opacity: 0.5;
+	}
+}

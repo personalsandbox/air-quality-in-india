@@ -1,0 +1,86 @@
+@import '@helpers/scss';
+
+html {
+	font-size: 10px;
+	&, & body {
+		margin: 0;
+		padding: 0;
+		min-height: 100vh;
+	}
+	& body {
+		font-size: 1.6rem;
+		font-family: 'Urbanist', sans-serif;
+	}
+}
+
+* {
+	&,
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}
+	&,
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+
+h1 {
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+p {
+	font-size: 1.6rem;
+	margin: 0 0 1.6rem;
+}
+
+#root {
+	min-height: 100vh;
+}
+
+[class*="scrollbar"] {
+	padding-right: 1.6rem;
+}
+
+* {
+	&::-webkit-scrollbar {
+		width: $scrollbar-thickness;
+		height: $scrollbar-thickness;
+		&-track,
+		&-thumb {
+			border-radius: $scrollbar-thickness;
+		}
+		&-track {
+			background-color: rgba(0, 0, 0, 0.1);
+			&:vertical {
+				width: $scrollbar-thickness;
+			}
+			&:horizontal {
+				height: $scrollbar-thickness;
+			}
+		}
+		&-thumb {
+			background-color: rgba(0, 0, 0, 0.2);
+			cursor: default;
+			&:vertical {
+				width: $scrollbar-thickness;
+			}
+			&:horizontal {
+				height: $scrollbar-thickness;
+			}
+		}
+	}
+	// HOVER
+	&:hover {
+		&::-webkit-scrollbar {
+			&-track {
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+			&-thumb {
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+		}
+	}
+}
